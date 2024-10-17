@@ -2,6 +2,7 @@ package pac1;
 
 import Guddu.*;
 import java.lang.Math.*;
+import java.util.Random;
  
 public class JAVA {
 
@@ -16,6 +17,9 @@ public class JAVA {
 		Guddu.student.main(args);
 		Guddu.course.main(args);
 		Guddu.teacher.main(args);
+		Random random = new Random();
+		long a=1000000000L+(long)(random.nextDouble()*9000000000L);
+		System.out.println(a);
         
 	}
 
