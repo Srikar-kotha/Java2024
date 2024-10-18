@@ -23,7 +23,7 @@ public class savingsaccount extends account {
 	public double getMin_bal() {
 		return min_bal;
 	}
-	//@Override
+	@Override
 	public void withdrawl() {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the withdrawl amount :");
