@@ -36,6 +36,7 @@ public class currentaccount extends account {
 		try {
 			currentaccount curr_acc=new currentaccount("smith",24,2000);
 			curr_acc.show();
+
 		} catch (ageexception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
