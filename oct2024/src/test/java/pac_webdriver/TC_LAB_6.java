@@ -1,7 +1,9 @@
 package pac_webdriver;
 
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -10,7 +12,8 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -25,33 +28,43 @@ public class TC_LAB_6 {
 		driver.manage().window().setSize(new Dimension(1202, 672));
 		
 		driver.get("https://www.snapdeal.com/");
+//		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+		LAB6_pom obj = new LAB6_pom(driver);
+		
 		Thread.sleep(5000);
 		
-		driver.findElement(By.xpath("//*[@id=\"leftNavMenuRevamp\"]/div[1]/div[2]/ul/li[1]/a/span[2]")).click();
-		driver.findElement(By.xpath("//*[@id=\"category1Data\"]/div[1]/div/div/p[2]/a/span")).click();
-		
-		driver.findElement(By.className("sort-selected")).click();
+		obj.mens();
+		obj.sort();
 		driver.findElement(By.xpath("//*[@id=\"content_wrapper\"]/div[9]/div[2]/div/div[3]/div[2]/ul/li[2]")).click();
 		
-		Thread.sleep(3000);
-		driver.findElement(By.xpath("//*[@id=\"680540434263\"]/div[1]/a/picture/img")).click();
+		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+
+		driver.findElement(By.xpath("//*[@id=\"680540434263\"]")).click();
 		
-		Thread.sleep(5000);
-		
-		List<String> wh= new ArrayList<String>(driver.getWindowHandles());
-		driver.switchTo().window(wh.get(1));
+		//window switch
+		obj.switch_window(1);
         
 		System.out.println("The item details is :"+driver.findElement(By.linkText("Item Details")).isDisplayed());
-		driver.findElement(By.id("add-cart-button-id")).click();
+		
+		obj.add_cart();
 		
 		System.out.println("The product is added :"+driver.findElement(By.className("mess-text")).isDisplayed());
+
+		//Searching
+		obj.search("mobile cover");
 		
-		System.out.println("finish");
+		obj.sort();
+//		driver.findElement(By.className("sort-selected")).click();
+		driver.findElement(By.xpath("//*[@id=\"content_wrapper\"]/div[7]/div[5]/div[3]/div[1]/div/div[2]/ul/li[3]")).click();
+									 
+		//*[@id=\"content_wrapper\"]/div[9]/div[2]/div/div[3]/div[2]/ul/li[2]
 		
-		WebElement sea=driver.findElement(By.id("inputValEnter"));
-		sea.sendKeys("mobile cover");
-		sea.submit();
-//		driver.findElement(By.className("searchformButton col-xs-4 rippleGrey")).click();
+		driver.findElement(By.id("621740455267")).click();
+
+		obj.switch_window(2);
+		
+		driver.findElement(By.xpath("/html[1]/body[1]/div[11]/section[1]/div[1]/div[2]/div[1]/div[1]/div[4]/div[3]/div[1]/div[2]/div[1]/div[1]/div[2]/span[1]")).click();
+		driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[4]/div[2]/div[1]/div[3]/div[1]/div[1]/i[1]")).click();
 		
 		System.out.println("finish");
 
