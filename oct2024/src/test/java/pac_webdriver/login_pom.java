@@ -14,6 +14,9 @@ public class login_pom {
 	By password=By.id("input-password");
 	By loginbutton=By.xpath("//button[@type='submit']");
 	
+	
+	
+	
 	void enterusername(String email) {
 		driver.findElement(username).sendKeys(email);;
 	}

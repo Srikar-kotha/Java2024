@@ -1,40 +1,43 @@
 package pac_webdriver;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.io.InputStream;
-import java.time.Duration;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.Alert;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
-import org.openqa.selenium.JavascriptExecutor;
+
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class TC_LAB_6 {
+public class LAB6_XLXS {
 
 	public static void main(String[] args) throws InterruptedException, IOException {
 		// TODO Auto-generated method stub
 		
 		String projectpath = System.getProperty("user.dir");
 		System.out.println("project path: "+projectpath);
-		Properties pro =new Properties();
-		InputStream input = new FileInputStream(projectpath+"\\lab6_properties");
-		pro.load(input);
-		String snapdeal_url=pro.getProperty("url");
-		String sear=pro.getProperty("search");
+		
+		FileInputStream input = new FileInputStream(projectpath+"\\lab6.xlsx");
+//		"C:\Users\srikar.kotha\eclipse-workspace\oct2024\lab6.xlsx"
+		XSSFWorkbook workbook = new XSSFWorkbook(input);
+		XSSFSheet sheet=workbook.getSheet("lab6");
+		
+		int noofrows = sheet.getPhysicalNumberOfRows();
+		
+		for(int i=0;i<noofrows;i++)
+		{
+			String snapdeal_url=sheet.getRow(i).getCell(0).getStringCellValue();
+			String sear=sheet.getRow(i).getCell(1).getStringCellValue();
+			
 		
 		
 		WebDriverManager.chromedriver().setup();
@@ -80,6 +83,7 @@ public class TC_LAB_6 {
 		driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[4]/div[2]/div[1]/div[3]/div[1]/div[1]/i[1]")).click();
 		
 		System.out.println("finish");
+		}
 
 
 	}
