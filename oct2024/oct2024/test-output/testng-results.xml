@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-11-10T14:17:29 IST" name="Default suite" finished-at="2024-11-10T14:18:42 IST" duration-ms="72778">
+    <groups>
+    </groups>
+    <test started-at="2024-11-10T14:17:29 IST" name="Default test" finished-at="2024-11-10T14:18:42 IST" duration-ms="72778">
+      <class name="pac_webdriver.TC_login_pagefactory_extentreports">
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:pac_webdriver.TC_login_pagefactory_extentreports@792b749c]" started-at="2024-11-10T14:17:30 IST" name="login" data-provider="login" finished-at="2024-11-10T14:18:13 IST" duration-ms="42942" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Srikarkotha260@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Srikar@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:pac_webdriver.TC_login_pagefactory_extentreports@792b749c]" started-at="2024-11-10T14:18:13 IST" name="login" data-provider="login" finished-at="2024-11-10T14:18:42 IST" duration-ms="29228" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[charanpanamata12@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Amma@2002]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- pac_webdriver.TC_login_pagefactory_extentreports -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

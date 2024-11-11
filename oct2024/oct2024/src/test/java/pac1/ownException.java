@@ -18,7 +18,7 @@ public class ownException {
 		// TODO Auto-generated method stub
 		
 		ownException obj = new ownException();
-		obj.
+		obj.proc();
 
 	}
 

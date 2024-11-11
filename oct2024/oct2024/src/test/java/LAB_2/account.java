@@ -18,7 +18,7 @@ public class account
 	private String name;
 	private int age;
 	private long acc_num;
-	private double bal=500.00;
+	private double bal;
 	//final double min_bal=500.00;
 	private String acc_holder;
 	int opt;

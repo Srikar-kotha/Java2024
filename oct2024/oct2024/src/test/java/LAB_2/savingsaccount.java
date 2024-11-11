@@ -28,11 +28,14 @@ public class savingsaccount extends account {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the withdrawl amount :");
 		double draw=sc.nextDouble();
-		if(curr_bal<=min_bal)
+		setBal(getBal()-draw);
+		if(getBal()<=getMin_bal()) {
 			System.out.println("You cannot withdraw the amount,the min_bal is "+min_bal);
-		curr_bal=curr_bal-draw;
-	}
+			setBal(getBal()+draw);
+		}
 
+		
+		}
 	public static void main(String[] args) {
 		
 		// TODO Auto-generated method stub

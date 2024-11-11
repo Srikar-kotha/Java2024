@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-11-10T18:27:08 IST" name="Default suite" finished-at="2024-11-10T18:28:13 IST" duration-ms="65410">
+    <groups>
+    </groups>
+    <test started-at="2024-11-10T18:27:08 IST" name="Default test" finished-at="2024-11-10T18:28:13 IST" duration-ms="65410">
+      <class name="com.supertail.main.OdysseyTestNg">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.supertail.main.OdysseyTestNg@57a78e3]" started-at="2024-11-10T18:27:08 IST" name="beforeSuite" finished-at="2024-11-10T18:27:08 IST" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.supertail.main.OdysseyTestNg@57a78e3]" started-at="2024-11-10T18:27:08 IST" name="beforeTest" finished-at="2024-11-10T18:27:37 IST" duration-ms="29009" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.supertail.main.OdysseyTestNg@57a78e3]" started-at="2024-11-10T18:27:37 IST" name="beforeClass" finished-at="2024-11-10T18:27:37 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.supertail.main.OdysseyTestNg@57a78e3]" started-at="2024-11-10T18:27:39 IST" name="beforeMethod" finished-at="2024-11-10T18:27:39 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="create(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.supertail.main.OdysseyTestNg@57a78e3]" started-at="2024-11-10T18:27:39 IST" name="create" data-provider="create" finished-at="2024-11-10T18:28:00 IST" duration-ms="21111" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[srikar]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[kotha]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[srikarkbd123@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Srikar@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.supertail.main.OdysseyTestNg@57a78e3]" started-at="2024-11-10T18:28:00 IST" name="afterMethod" finished-at="2024-11-10T18:28:00 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="login_action(java.lang.String,java.lang.String)[pri:2, instance:com.supertail.main.OdysseyTestNg@57a78e3]" started-at="2024-11-10T18:28:00 IST" name="login_action" data-provider="login" finished-at="2024-11-10T18:28:13 IST" duration-ms="13024" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[bunnykbd05@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Srikar@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_action -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.supertail.main.OdysseyTestNg@57a78e3]" started-at="2024-11-10T18:28:00 IST" name="beforeMethod" finished-at="2024-11-10T18:28:00 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.supertail.main.OdysseyTestNg@57a78e3]" started-at="2024-11-10T18:28:13 IST" name="afterMethod" finished-at="2024-11-10T18:28:13 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.supertail.main.OdysseyTestNg@57a78e3]" started-at="2024-11-10T18:28:13 IST" name="afterClass" finished-at="2024-11-10T18:28:13 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.supertail.main.OdysseyTestNg@57a78e3]" started-at="2024-11-10T18:28:13 IST" name="afterTest" finished-at="2024-11-10T18:28:13 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.supertail.main.OdysseyTestNg@57a78e3]" started-at="2024-11-10T18:28:13 IST" name="afterSuite" finished-at="2024-11-10T18:28:13 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.supertail.main.OdysseyTestNg -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

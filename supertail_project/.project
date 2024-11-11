@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>supertail_project</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.m2e.core.maven2Builder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+		<nature>org.eclipse.m2e.core.maven2Nature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>supertail.xlxs.xlsx</name>
+			<type>1</type>
+			<location>C:/Users/srikar.kotha/eclipse-workspace/supertail_project/supertail.xlxs.xlsx</location>
+		</link>
+		<link>
+			<name>src/test/java/com/supertail/main/odyssey9.xlsx</name>
+			<type>1</type>
+			<location>C:/Users/srikar.kotha/OneDrive - ascendion/Training/odyssey9.xlsx</location>
+		</link>
+	</linkedResources>
+</projectDescription>
